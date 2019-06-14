@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bilder der Kraft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" href="icons/engel.jpg">
+
+    <!--Referenz zu Geojeson/Naturschutzgebiete-->
+    <script src="gebiete.js"></script>
+
+
+    <!--Referenz zu Javascript/ Karte-->
+    <script defer src="main.js"></script>
+
+
+</head>
+
+<body>
+
+    <ul>
+        <header>
+            <h3>Bildergalerie</h3>
+        </header>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="gallerie.html">Zur Bildergalerie</a></li>
+            <li><a href="index.html">Zur Erfolgsgeschichte</a></li>                        
+        </ul>   
+    <main>
+        <hr />
+
+        <style>
+            div.gallery {
+                border: 1px solid #ccc;
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+            }
+
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+                .responsive {
+                    width: 100%;
+                }
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+        <h2>Bilder voller Inspiration</h2>
+        <h4>Wenn sich Stärke festhalten lässt</h4>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/humbug.jpg">
+                    <img src="images/humbug.jpg" alt="Laliderer Wand" width="600" height="600">
+                </a>
+                <div class="desc">Die volle Kraft der Musik</div>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/spirale.jpg">
+                    <img src="images/spirale.jpg" alt="Altaussee" width="600" height="400">
+                </a>
+                <div class="desc">Die Spirale der Panflöte -  Das Stenrzeichen der inneren Stärke</div>
+            </div>
+        </div>
+
+        
+
+        <div class="clearfix"></div>
+
+        <div style="padding:6px;">
+            
+        </div>
+
+
+
+
+
+    </main>
+
+    <hr />
+
+    <footer>
+
+
+    </footer>
+
+</body>
+
+</html>
